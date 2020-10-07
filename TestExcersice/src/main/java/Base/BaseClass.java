@@ -57,7 +57,7 @@ public class BaseClass {
 	 * 
 	 */
 	
-	//String browser=	properties.getProperty("browser");
+	String browser=	properties.getProperty("browser");
 	
 	if(browser.equalsIgnoreCase("chrome")) {
 		
@@ -120,6 +120,8 @@ public class BaseClass {
 		}
 		
 	}
+	
+	
 	
 	public void verifyTitle(String pagetitle) {
 		String title= driver.getTitle();
