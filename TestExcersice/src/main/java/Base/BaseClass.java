@@ -57,7 +57,7 @@ public class BaseClass {
 	 * 
 	 */
 	
-	//String browser=	properties.getProperty("browser");
+	String browser=	properties.getProperty("browser");
 	
 	if(browser.equalsIgnoreCase("chrome")) {
 		
@@ -123,11 +123,18 @@ public class BaseClass {
 	
 	
 	
-	public void verifyTitle(String pagetitle) {
+	public String verifyTitle(String pagetitle) {
 		String title= driver.getTitle();
 		Assert.assertEquals(title, pagetitle);
-		
+		return title;
 	}
+	
+	public void verifyPageSource() {
+	driver.getPageSource().contains("A family member means any of your:");
+	Assert.assertTrue(true);
+	}
+	
+	
 	
 	
 }

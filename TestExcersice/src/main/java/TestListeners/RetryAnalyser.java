@@ -10,7 +10,7 @@ import Base.BaseClass;
 public class RetryAnalyser extends BaseClass implements IRetryAnalyzer{
 	
 	int count = 0;
-	int retrylimit = 0;
+	int retrylimit = 2;
 
 	public boolean retry(ITestResult arg0) {
 		if(count<retrylimit) {

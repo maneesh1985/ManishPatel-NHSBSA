@@ -8,7 +8,7 @@ public class GlaucomaPage extends BaseClass {
 	
 	public GlaucomaPage() {
 		PageFactory.initElements(driver, this);
-		verifyTitle("Do you have glaucoma?");
+		verifyPageSource();
 	}
 	
 	public CareHomePage selectGlaucomaAsNo() {
