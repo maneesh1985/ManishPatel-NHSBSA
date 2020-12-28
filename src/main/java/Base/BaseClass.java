@@ -19,12 +19,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
+
 /*
-Hello My name is manish Patel
-
+1. 28/12/2020
  */
-
-
 public class BaseClass {
 	
 	public static WebDriver driver;
@@ -60,7 +58,7 @@ public class BaseClass {
 	 * 
 	 */
 	
-	// browser=	properties.getProperty("browser");
+	 browser=	properties.getProperty("browser");
 	
 	if(browser.equalsIgnoreCase("chrome")) {
 		
